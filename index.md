@@ -438,13 +438,225 @@ title: Subscript and Superscript Generator
     <input type="text" id="eqSearchInput" placeholder="Search equations...">
     <!-- Equation Bank Grid -->
     <div id="equationBank">
-        <!-- Original Equations -->
-        <button type="button" class="eq-btn" title="Quadratic Formula">x = [-b ± √(b²-4ac)]/(2a)</button>
+      <button type="button" class="eq-btn" title="Quadratic Formula">x = [-b ± √(b²-4ac)]/(2a)</button>
         <button type="button" class="eq-btn" title="Pythagorean Theorem">a² + b² = c²</button>
         <button type="button" class="eq-btn" title="Euler's Formula">e^{iπ} + 1 = 0</button>
         <button type="button" class="eq-btn" title="Area of Circle">A = πr²</button>
         <button type="button" class="eq-btn" title="Volume of Sphere">V = (4/3)πr³</button>
-        <!-- Add more equations as needed from the original code -->
+        <button type="button" class="eq-btn" title="Slope of a Line">m = (y₂ - y₁)/(x₂ - x₁)</button>
+        <button type="button" class="eq-btn" title="Derivative">f'(x) = lim_{h→0} [f(x+h) - f(x)] / h</button>
+        <button type="button" class="eq-btn" title="Integral">∫f(x)dx</button>
+        <button type="button" class="eq-btn" title="Binomial Theorem">(a + b)^n = Σ_{k=0}^n C(n,k)a^{n-k}b^k</button>
+        <button type="button" class="eq-btn" title="Law of Cosines">c² = a² + b² - 2ab cos(C)</button>
+        <button type="button" class="eq-btn" title="Einstein's Mass-Energy Equivalence">E = mc²</button>
+        <button type="button" class="eq-btn" title="Circumference of Circle">C = 2πr</button>
+        <button type="button" class="eq-btn" title="Distance Formula">d = √[(x₂-x₁)² + (y₂-y₁)²]</button>
+        <button type="button" class="eq-btn" title="Area of Triangle">A = (1/2)bh</button>
+        <button type="button" class="eq-btn" title="Vector Dot Product">a⋅b = |a||b|cos(θ)</button>
+        <button type="button" class="eq-btn" title="Law of Sines">a/sin(A) = b/sin(B) = c/sin(C)</button>
+        <button type="button" class="eq-btn" title="Ideal Gas Law">PV = nRT</button>
+        <button type="button" class="eq-btn" title="Taylor Series">f(x) = Σ_{n=0}^∞ (f^{(n)}(a)/n!)(x-a)^n</button>
+        <button type="button" class="eq-btn" title="Maxwell's First Equation">∇⋅E = ρ/ε₀</button>
+        <button type="button" class="eq-btn" title="Schrödinger Equation">iℏ∂ψ/∂t = Ĥψ</button>
+        <button type="button" class="eq-btn" title="Normal Distribution">f(x) = (1/σ√(2π))e^{-(x-μ)²/(2σ²)}</button>
+        <button type="button" class="eq-btn" title="Wave Equation">∂²u/∂t² = c²∂²u/∂x²</button>
+        <button type="button" class="eq-btn" title="Heat Equation">∂u/∂t = α∇²u</button>
+        <button type="button" class="eq-btn" title="Euler's Identity">e^{iθ} = cos(θ) + isin(θ)</button>
+        <button type="button" class="eq-btn" title="Area of Rectangle">A = l × w</button>
+        <button type="button" class="eq-btn" title="Vector Cross Product">|a×b| = |a||b|sin(θ)</button>
+        <button type="button" class="eq-btn" title="Fourier Transform">F(ω) = ∫_{-∞}^∞ f(t)e^{-iωt}dt</button>
+        <button type="button" class="eq-btn" title="Laplace Transform">F(s) = ∫_{0}^∞ f(t)e^{-st}dt</button>
+        <button type="button" class="eq-btn" title="Maxwell-Boltzmann Distribution">f(v) = √(m/2πkT)³ e^{-mv²/2kT}</button>
+        <button type="button" class="eq-btn" title="Lorentz Factor">γ = 1/√(1-v²/c²)</button>
+        <button type="button" class="eq-btn" title="Planck's Law">B(λ,T) = (2hc²/λ⁵)/(e^{hc/λkT} - 1)</button>
+        <button type="button" class="eq-btn" title="Heisenberg Uncertainty">ΔxΔp ≥ ℏ/2</button>
+        <button type="button" class="eq-btn" title="Gravitational Force">F = G(m₁m₂)/r²</button>
+        <button type="button" class="eq-btn" title="Coulomb's Law">F = k(q₁q₂)/r²</button>
+        <button type="button" class="eq-btn" title="Standard Deviation">σ = √(Σ(x-μ)²/N)</button>
+        <button type="button" class="eq-btn" title="Momentum">p = mv</button>
+        <button type="button" class="eq-btn" title="Kinetic Energy">KE = (1/2)mv²</button>
+        <button type="button" class="eq-btn" title="Potential Energy">PE = mgh</button>
+        <button type="button" class="eq-btn" title="Work">W = F⋅d</button>
+        <button type="button" class="eq-btn" title="Power">P = W/t</button>
+        <button type="button" class="eq-btn" title="Ohm's Law">V = IR</button>
+        <button type="button" class="eq-btn" title="Capacitance">C = Q/V</button>
+        <button type="button" class="eq-btn" title="Inductance">V = L(dI/dt)</button>
+        <button type="button" class="eq-btn" title="Magnetic Field">B = μ₀I/(2πr)</button>
+        <button type="button" class="eq-btn" title="Wave Function">λ = v/f</button>
+        <button type="button" class="eq-btn" title="Stefan-Boltzmann Law">P = σAT⁴</button>
+        <button type="button" class="eq-btn" title="de Broglie Wavelength">λ = h/p</button>
+        <button type="button" class="eq-btn" title="Bernoulli's Equation">P + (1/2)ρv² + ρgh = constant</button>
+        <button type="button" class="eq-btn" title="Van der Waals Equation">(P + an²/V²)(V - nb) = nRT</button>
+        <button type="button" class="eq-btn" title="Entropy Change">ΔS = Q/T</button>
+        <button type="button" class="eq-btn" title="Specific Heat Formula">q = mcΔT</button>
+        <button type="button" class="eq-btn" title="Snell's Law">n₁sinθ₁ = n₂sinθ₂</button>
+        <button type="button" class="eq-btn" title="Hooke's Law">F = -kx</button>
+        <button type="button" class="eq-btn" title="Ampère's Law">∮B⋅dl = μ₀I</button>
+        <button type="button" class="eq-btn" title="Gibbs Free Energy">ΔG = ΔH - TΔS</button>
+        <button type="button" class="eq-btn" title="Boyle's Law">P₁V₁ = P₂V₂</button>
+        <button type="button" class="eq-btn" title="Charles's Law">V₁/T₁ = V₂/T₂</button>
+        <button type="button" class="eq-btn" title="Magnetic Flux">Φ = B⋅A⋅cosθ</button>
+        <button type="button" class="eq-btn" title="Photoelectric Effect">E_k = hf - φ</button>
+        <button type="button" class="eq-btn" title="Moment of Inertia">I = Σmr²</button>
+        <button type="button" class="eq-btn" title="Centripetal Force">F = mv²/r</button>
+        <button type="button" class="eq-btn" title="Doppler Effect (frequency)">f' = f(v ± v₀)/(v ∓ vs)</button>
+        <button type="button" class="eq-btn" title="Escape Velocity">v_e = √(2GM/r)</button>
+        <button type="button" class="eq-btn" title="Thermal Efficiency">η = 1 - T_c/T_h</button>
+        <button type="button" class="eq-btn" title="Ideal Transformer Equation">V₁/V₂ = N₁/N₂</button>
+        <button type="button" class="eq-btn" title="Bohr's Radius">a₀ = 4πε₀ℏ²/(mₑe²)</button>
+        <button type="button" class="eq-btn" title="Relativistic Energy">E² = (pc)² + (mc²)²</button>
+        <button type="button" class="eq-btn" title="Chemical Equilibrium Constant">K = [C]^c[D]^d / [A]^a[B]^b</button>
+        <button type="button" class="eq-btn" title="Frequency of a Pendulum">f = (1/2π)√(g/L)</button>
+        <button type="button" class="eq-btn" title="Fermat's Last Theorem">xⁿ + yⁿ ≠ zⁿ, n > 2</button>
+        <button type="button" class="eq-btn" title="Combined Gas Law">P₁V₁/T₁ = P₂V₂/T₂</button>
+        <button type="button" class="eq-btn" title="Angular Momentum">L = Iω</button>
+        <button type="button" class="eq-btn" title="Root Mean Square Speed">v_rms = √(3kT/m)</button>
+        <button type="button" class="eq-btn" title="Gravitational Potential Energy">U = -G(m₁m₂)/r</button>
+        <button type="button" class="eq-btn" title="Electrical Potential Energy">U = k(q₁q₂)/r</button>
+        <button type="button" class="eq-btn" title="Kepler's Third Law">T² ∝ r³</button>
+        <button type="button" class="eq-btn" title="Poisson's Equation">∇²φ = -ρ/ε₀</button>
+        <button type="button" class="eq-btn" title="Thermodynamic Work">W = -PΔV</button>
+        <button type="button" class="eq-btn" title="Rydberg Formula">1/λ = R_H(1/n₁² - 1/n₂²)</button>
+        <button type="button" class="eq-btn" title="Relativistic Mass">m = m₀/√(1 - v²/c²)</button>
+        <button type="button" class="eq-btn" title="Energy Stored in a Capacitor">U = (1/2)CV²</button>
+        <button type="button" class="eq-btn" title="Magnetic Force on a Moving Charge">F = q(v × B)</button>
+        <button type="button" class="eq-btn" title="Faraday's Law of Induction">ε = -dΦ/dt</button>
+        <button type="button" class="eq-btn" title="Reynolds Number">Re = ρvL/μ</button>
+        <button type="button" class="eq-btn" title="Hydrostatic Pressure">P = ρgh</button>
+        <button type="button" class="eq-btn" title="Electric Field of a Point Charge">E = kq/r²</button>
+        <button type="button" class="eq-btn" title="Drift Velocity">v_d = I/nqA</button>
+        <button type="button" class="eq-btn" title="Molarity">M = n/V</button>
+        <button type="button" class="eq-btn" title="Half-Life">N = N₀e^{-λt}</button>
+        <button type="button" class="eq-btn" title="Arrhenius Equation">k = Ae^{-Ea/(RT)}</button>
+        <button type="button" class="eq-btn" title="Logistic Growth">P(t) = K / (1 + e^{-r(t-t₀)})</button>
+        <button type="button" class="eq-btn" title="Bragg's Law">nλ = 2d sinθ</button>
+        <button type="button" class="eq-btn" title="Photon Energy">E = hf</button>
+        <button type="button" class="eq-btn" title="Lens Maker's Formula">1/f = (n - 1)(1/R₁ - 1/R₂)</button>
+        <button type="button" class="eq-btn" title="Quantum Uncertainty Principle">ΔEΔt ≥ ℏ/2</button>
+        <button type="button" class="eq-btn" title="Rayleigh Criterion">θ = 1.22λ/D</button>
+        <button type="button" class="eq-btn" title="Thermal Conductivity">Q = kAΔT/L</button>
+        <button type="button" class="eq-btn" title="Moment of Force">τ = rFsinθ</button>
+        <button type="button" class="eq-btn" title="Relative Velocity">v_{AB} = v_A - v_B</button>
+        <button type="button" class="eq-btn" title="Decay Constant">λ = ln(2)/t₁/₂</button>
+        <button type="button" class="eq-btn" title="Harmonic Oscillator Energy">E = (n + 1/2)ℏω</button>
+        <button type="button" class="eq-btn" title="Mechanical Advantage">MA = F_out/F_in</button>
+        <button type="button" class="eq-btn" title="Magnification">M = -di/do</button>
+        <button type="button" class="eq-btn" title="Young's Modulus">E = σ/ε</button>
+        <button type="button" class="eq-btn" title="Center of Mass">R = (Σmᵢrᵢ)/(Σmᵢ)</button>
+        <button type="button" class="eq-btn" title="Mole Fraction">χₐ = nₐ/n_total</button>
+        <button type="button" class="eq-btn" title="Clausius-Clapeyron Equation">ln(P₂/P₁) = -ΔHvap/R(1/T₂ - 1/T₁)</button>
+        <button type="button" class="eq-btn" title="Power in AC Circuit">P = VIcosθ</button>
+        <button type="button" class="eq-btn" title="Angular Frequency">ω = 2πf</button>
+        <button type="button" class="eq-btn" title="Hubble's Law">v = H₀d</button>
+        <button type="button" class="eq-btn" title="Friction Force">f = μN</button>
+        <button type="button" class="eq-btn" title="Gravitational Field Strength">g = GM/r²</button>
+        <button type="button" class="eq-btn" title="Relative Humidity">RH = (actual vapor pressure/saturation vapor pressure) × 100%</button>
+        <button type="button" class="eq-btn" title="Electrostatic Potential Energy">U = qV</button>
+        <button type="button" class="eq-btn" title="Photon Momentum">p = E/c</button>
+        <button type="button" class="eq-btn" title="Beat Frequency">f_beat = |f₁ - f₂|</button>
+        <button type="button" class="eq-btn" title="Magnetic Flux Linkage">λ = NΦ</button>
+        <button type="button" class="eq-btn" title="Gibbs Phase Rule">F = C - P + 2</button>
+        <button type="button" class="eq-btn" title="Harmonic Series Sum">S = Σ_{n=1}^∞ (1/n)</button>
+        <button type="button" class="eq-btn" title="Electromagnetic Wave Equation">∇²E = μ₀ε₀ ∂²E/∂t²</button>
+        <button type="button" class="eq-btn" title="Buckingham Pi Theorem">π₁ = f(π₂, π₃, ...)</button>
+        <button type="button" class="eq-btn" title="Larmor Formula">P = (2/3)(q²a²)/(4πε₀c³)</button>
+        <button type="button" class="eq-btn" title="Time Dilation">Δt' = Δt/√(1 - v²/c²)</button>
+        <button type="button" class="eq-btn" title="Einstein Field Equation">R_{μν} - (1/2)Rg_{μν} + Λg_{μν} = (8πG/c⁴)T_{μν}</button>
+        <button type="button" class="eq-btn" title="Surface Area of a Sphere">A = 4πr²</button>
+        <button type="button" class="eq-btn" title="Spherical Harmonics">Y(θ, φ) = √((2l+1)/(4π)(l-m)!/(l+m)!)P(θ)e^{imφ}</button>
+        <button type="button" class="eq-btn" title="Wein's Displacement Law">λ_max = b/T</button>
+        <button type="button" class="eq-btn" title="Lorentz Transformation">x' = γ(x - vt)</button>
+        <button type="button" class="eq-btn" title="Elastic Collision Equation">v₁' = (m₁ - m₂)v₁ + 2m₂v₂ / (m₁ + m₂)</button>
+        <button type="button" class="eq-btn" title="Triple Product Expansion">a ⋅ (b × c) = (a × b) ⋅ c</button>
+        <button type="button" class="eq-btn" title="Fundamental Frequency">f₀ = v/2L</button>
+        <button type="button" class="eq-btn" title="Fourier Series">f(x) = a₀/2 + Σ(aₙcos(nx) + bₙsin(nx))</button>
+        <button type="button" class="eq-btn" title="Moment of Inertia for a Solid Cylinder">I = (1/2)MR²</button>
+        <button type="button" class="eq-btn" title="Center of Mass for Continuous Mass">R_cm = (1/M)∫r dm</button>
+        <button type="button" class="eq-btn" title="Chain Rule in Calculus">dy/dx = (dy/du)(du/dx)</button>
+        <button type="button" class="eq-btn" title="Wave Number">k = 2π/λ</button>
+        <button type="button" class="eq-btn" title="Thermodynamic Free Energy">F = U - TS</button>
+        <button type="button" class="eq-btn" title="Brewster's Angle">tanθ_B = n₂/n₁</button>
+        <button type="button" class="eq-btn" title="Adiabatic Process (PV Relation)">P₁V₁^γ = P₂V₂^γ</button>
+        <button type="button" class="eq-btn" title="Phase Velocity">v_p = ω/k</button>
+        <button type="button" class="eq-btn" title="Impulse">J = FΔt</button>
+        <button type="button" class="eq-btn" title="Vector Magnitude">|v| = √(v_x² + v_y² + v_z²)</button>
+        <button type="button" class="eq-btn" title="Lagrangian">L = T - V</button>
+        <button type="button" class="eq-btn" title="Second Law of Thermodynamics">ΔS ≥ 0</button>
+        <button type="button" class="eq-btn" title="Total Internal Reflection">θ > θ_c = sin⁻¹(n₂/n₁)</button>
+        <button type="button" class="eq-btn" title="Pressure-Volume Work">W = ∫PdV</button>
+        <button type="button" class="eq-btn" title="Quantum Partition Function">Z = Σ e^{-E_i/kT}</button>
+        <button type="button" class="eq-btn" title="Thermodynamic Efficiency">η = W/Q_in</button>
+        <button type="button" class="eq-btn" title="Moment of Inertia for a Hollow Sphere">I = (2/3)MR²</button>
+        <button type="button" class="eq-btn" title="Gravitational Potential">V = -GM/r</button>
+        <button type="button" class="eq-btn" title="Schwarzschild Radius">r_s = 2GM/c²</button>
+        <button type="button" class="eq-btn" title="Bulk Modulus">B = -V(ΔP/ΔV)</button>
+        <button type="button" class="eq-btn" title="Heat Capacity">C = q/ΔT</button>
+        <button type="button" class="eq-btn" title="Gradient in Cylindrical Coordinates">∇ = ∂/∂r eᵣ + (1/r)∂/∂θ e_θ + ∂/∂z e_z</button>
+        <button type="button" class="eq-btn" title="Max Planck's Equation">E = nhν</button>
+        <button type="button" class="eq-btn" title="Biot-Savart Law">dB = (μ₀/4π) * (I dl × r̂)/r²</button>
+        <button type="button" class="eq-btn" title="Euler's Theorem">e^{iπ} = -1</button>
+        <button type="button" class="eq-btn" title="Tangent Line Equation">y - y₁ = m(x - x₁)</button>
+        <button type="button" class="eq-btn" title="Polar Form of Complex Number">z = r(cosθ + isinθ)</button>
+        <button type="button" class="eq-btn" title="Mean Free Path">λ = 1/(√2 nσ)</button>
+        <button type="button" class="eq-btn" title="Quantum Harmonic Oscillator">Eₙ = (n + 1/2)ℏω</button>
+        <button type="button" class="eq-btn" title="Double Angle Formula for Sine">sin(2θ) = 2sinθcosθ</button>
+        <button type="button" class="eq-btn" title="Sum of Interior Angles">Σθ = (n-2) × 180°</button>
+        <button type="button" class="eq-btn" title="Angular Displacement">θ = s/r</button>
+        <button type="button" class="eq-btn" title="Fick's First Law of Diffusion">J = -D(dC/dx)</button>
+        <button type="button" class="eq-btn" title="Relative Atomic Mass">Ar = m_avg/m_u</button>
+        <button type="button" class="eq-btn" title="Binomial Probability Formula">P(X = k) = C(n, k)p^k(1 - p)^(n - k)</button>
+        <button type="button" class="eq-btn" title="Distance Between Two Points">d = √((x₂ - x₁)² + (y₂ - y₁)²)</button>
+        <button type="button" class="eq-btn" title="Kinematic Equation (No Time)">v² = u² + 2as</button>
+        <button type="button" class="eq-btn" title="Geometric Series Sum">S_n = a(1 - r^n)/(1 - r)</button>
+        <button type="button" class="eq-btn" title="Heron's Formula">A = √(s(s - a)(s - b)(s - c))</button>
+        <button type="button" class="eq-btn" title="Stefan's Law of Black Body Radiation">P = σAT⁴</button>
+        <button type="button" class="eq-btn" title="Bode's Law (Planetary Distances)">d = 0.4 + 0.3 × 2^n (n = -∞, 0, 1, 2,...)</button>
+        <button type="button" class="eq-btn" title="Gaussian Distribution Formula">f(x) = (1/σ√(2π))e^(-(x - μ)²/(2σ²))</button>
+        <button type="button" class="eq-btn" title="Newton's Law of Cooling">T(t) = T_env + (T₀ - T_env)e^(-kt)</button>
+        <button type="button" class="eq-btn" title="Standard Error of the Mean">SE = σ/√n</button>
+        <button type="button" class="eq-btn" title="De Moivre's Theorem">(cos θ + i sin θ)^n = cos(nθ) + i sin(nθ)</button>
+        <button type="button" class="eq-btn" title="Critical Angle">θ_c = sin⁻¹(n₂/n₁)</button>
+        <button type="button" class="eq-btn" title="Bond Energy">ΔH ≈ Σ(bonds broken) - Σ(bonds formed)</button>
+        <button type="button" class="eq-btn" title="Geometric Mean">GM = (Πxᵢ)^(1/n)</button>
+        <button type="button" class="eq-btn" title="Average Velocity">v_avg = (v₁ + v₂)/2</button>
+        <button type="button" class="eq-btn" title="Second Moment of Area for a Rectangle">I = (bh³)/12</button>
+        <button type="button" class="eq-btn" title="Continuity Equation">A₁v₁ = A₂v₂</button>
+        <button type="button" class="eq-btn" title="Parabolic Motion (Range)">R = (v₀² sin 2θ)/g</button>
+        <button type="button" class="eq-btn" title="Hyperbolic Identity">cosh²(x) - sinh²(x) = 1</button>
+        <button type="button" class="eq-btn" title="Algebraic Mean">AM = (Σxᵢ)/n</button>
+        <button type="button" class="eq-btn" title="Moment of Inertia for a Point Mass">I = mr²</button>
+        <button type="button" class="eq-btn" title="Poisson Distribution">P(X=k) = (λ^k e^(-λ))/k!</button>
+        <button type="button" class="eq-btn" title="Law of Tangents">((a - b)/(a + b)) = ((tan((A - B)/2))/(tan((A + B)/2)))</button>
+        <button type="button" class="eq-btn" title="Hess's Law">ΔH = ΣΔH(products) - ΣΔH(reactants)</button>
+        <button type="button" class="eq-btn" title="Parallel Plate Capacitance">C = ε₀A/d</button>
+        <button type="button" class="eq-btn" title="Ideal Mechanical Advantage">IMA = d_in/d_out</button>
+        <button type="button" class="eq-btn" title="VSEPR Theory (Electron Pair Geometry)">AXₙEₘ</button>
+        <button type="button" class="eq-btn" title="Radiant Flux">Φ = ∫I(θ) dA</button>
+        <button type="button" class="eq-btn" title="Hydrostatic Equilibrium Equation">dP/dr = -Gρ(r)m(r)/r²</button>
+        <button type="button" class="eq-btn" title="Nyquist Theorem">f_s ≥ 2f_max</button>
+        <button type="button" class="eq-btn" title="Coefficient of Linear Expansion">ΔL = αL₀ΔT</button>
+        <button type="button" class="eq-btn" title="Coefficient of Performance (Refrigerator)">COP = Q_c/W</button>
+        <button type="button" class="eq-btn" title="Marginal Cost">MC = ΔTC/ΔQ</button>
+        <button type="button" class="eq-btn" title="Relative Velocity in Relativity">v_rel = (v₁ + v₂)/(1 + v₁v₂/c²)</button>
+        <button type="button" class="eq-btn" title="Molar Mass">M = m/n</button>
+        <button type="button" class="eq-btn" title="Maclaurin Series">f(x) = Σ (f⁽ⁿ⁾(0)/n!)xⁿ</button>
+        <button type="button" class="eq-btn" title="Risk Premium">Risk Premium = Expected Return - Risk-Free Rate</button>
+        <button type="button" class="eq-btn" title="Van't Hoff Equation">ln(K₂/K₁) = -ΔH/R(1/T₂ - 1/T₁)</button>
+        <button type="button" class="eq-btn" title="Impulse-Momentum Theorem">J = Δp</button>
+        <button type="button" class="eq-btn" title="Volume of a Cone">V = (1/3)πr²h</button>
+        <button type="button" class="eq-btn" title="Coulomb's Law for Continuous Charge Distribution">E = (1/4πε₀) ∫ (dq/r²) r̂</button>
+        <button type="button" class="eq-btn" title="Lorentz Force Law">F = q(E + v × B)</button>
+        <button type="button" class="eq-btn" title="Orbital Velocity">v = √(GM/r)</button>
+        <button type="button" class="eq-btn" title="Stirling's Approximation">n! ≈ √(2πn)(n/e)ⁿ</button>
+        <button type="button" class="eq-btn" title="Length Contraction">L = L₀√(1 - v²/c²)</button>
+        <button type="button" class="eq-btn" title="Mach Number">M = v/a</button>
+        <button type="button" class="eq-btn" title="Coefficient of Kinetic Friction">f_k = μ_kN</button>
+        <button type="button" class="eq-btn" title="Moment of Inertia of a Rod about Its End">I = (1/3)ML²</button>
+        <button type="button" class="eq-btn" title="Wavelength of Light in a Medium">λ_medium = λ₀/n</button>
+        <button type="button" class="eq-btn" title="Diffraction Grating Formula">d sin θ = mλ</button>
+        <button type="button" class="eq-btn" title="Maxwell Relation (Thermodynamics)">(∂S/∂V)_T = (∂P/∂T)_V</button>
+        <button type="button" class="eq-btn" title="Euler's Criterion (for Primality)">a^(p-1) ≡ 1 (mod p)</button>
+        <button type="button" class="eq-btn" title="Pressure Gradient Force">F = -∇P</button>
     </div>
     <!-- Custom Equation Input -->
     <div id="customEqContainer">
